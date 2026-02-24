@@ -1,0 +1,39 @@
+app:
+  name: "Cyber Research Lab Platform"
+  mode: "research"  # research-only, no exploitation
+  legal_notice: true
+
+logging:
+  level: "INFO"
+  json_logs: "logs/events.jsonl"
+
+risk:
+  weights:
+    severity: 0.4
+    confidence: 0.2
+    frequency: 0.2
+    asset_criticality: 0.2
+
+ml:
+  method: "isolation_forest"
+  contamination: 0.02
+  random_state: 42
+
+plugins:
+  enabled: []
+
+port_scanner:
+  max_threads: 50
+  rate_limit_per_second: 100
+  connect_timeout: 1.0
+
+web_scanner:
+  max_depth: 2
+  respect_robots: true
+  user_agent: "CyberResearchLab/1.0"
+  request_timeout: 5
+
+threat_intel:
+  cve_api_url: "https://cve.circl.lu/api"
+  cache_ttl_seconds: 86400
+

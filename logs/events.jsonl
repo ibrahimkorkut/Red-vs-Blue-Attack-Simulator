@@ -1,0 +1,4 @@
+{"timestamp": "2026-02-24T22:01:40Z", "level": "INFO", "logger": "lab", "message": "Running simulation scenario=brute_force count=200"}
+{"timestamp": "2026-02-24T22:01:40Z", "level": "INFO", "logger": "lab", "message": "Simulation written to logs/simulations/brute_force.jsonl"}
+{"timestamp": "2026-02-24T22:01:42Z", "level": "INFO", "logger": "lab", "message": "Loading events from logs/simulations/brute_force.jsonl"}
+{"timestamp": "2026-02-24T22:01:42Z", "level": "INFO", "logger": "lab", "message": "Reports written to reports/analysis.json and reports/analysis.html"}
